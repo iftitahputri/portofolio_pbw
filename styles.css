@@ -36,6 +36,13 @@ font-family: Inter;
 font-weight: 500;
 }
 
+h3 {
+color: white;
+font-size: 30px;
+font-family: 'Inter', sans-serif;
+font-weight: 700;
+}
+
 .wrapper {
     position: relative;
     width: 50%;
@@ -77,3 +84,30 @@ font-weight: 500;
     background-color: #6B5D8E;
 }
 
+.lists {
+    /* color: white; */
+    font-size: 22px;
+    font-family: Inter;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    gap: 200px; 
+    padding: 30px;
+}
+
+.list-item {
+    width: 250px;
+}
+
+table, th, td {
+  border: 1px solid black;
+  font-size: 22px;
+  font-family: Inter;
+  font-weight: 500;
+
+}
+
+th, td {
+  padding: 15px;
+  text-align: center;
+}
