@@ -1,36 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iftitah Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iftitah Portfolio</title>
+  <link href= "styles.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400&family=Playfair+Display:ital@1&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
-    <div class="about-section">
-        <div class="text">
-            <div class="bio">
-                <span class="white">Hello, </span>
-                <span class="purple">I Am <br>Iftitah</span>
-            </div>
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo">
+    <!-- ganti src ke assets/logo.png kamu -->
+    <img src="assets/logo.png" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'" alt="logo">
+    <span style="display:none; color:#EBFFFC; font-family:'Space Mono',monospace; font-size:16px; font-weight:700;">&lt;IF/&gt;</span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
-            <p>
-                My name is <span class ="purple"> Iftitah Putri Syahna.</span> I am currently studying <br>
-                Informatics at FMIPA USK, where I focus on software <br>
-                development and problem solving. <br>
-                My Student ID (NPM) is <span class ="purple"> 2408107010065.</span>
-                I am passionate <br>
-                about building web applications and continuously improving my technical skills.
-            </p>
-            <a href="about.html" class="next-btn">More About Me</a>
-        </div>
+<!-- SIDE SCROLL NAV -->
+<nav class="side-nav" id="sideNav"></nav>
+<div class="scroll-hint">SCROLL</div>
 
-        <div class="wrapper">
-            <div class="rectangle"></div>
-            <img src="assets/me.png" alt="Iftitah Photo" class="photo">
+<!-- ── HOME / ABOUT ── -->
+<section id="home">
+  <div class="text-side">
+    <div class="section-tag reveal">About /&gt;</div>
+    <div class="bio reveal">
+      <span class="white">Hello, </span>
+      <span class="purple">I Am<br>Iftitah</span>
+    </div>
+    <p class="intro-p reveal">
+      My name is <span class="purple">Iftitah Putri Syahna.</span> I am currently studying
+      Informatics at FMIPA USK, where I focus on software
+      development and problem solving.
+    </p>
+    <p class="intro-p reveal" style="color: var(--muted); font-style: italic; font-size:15px;">
+      More about me. . .
+    </p>
+  </div>
+
+  <div class="photo-wrapper reveal">
+    <div class="rectangle"></div>
+    <img src="assets/me.png" class="photo"
+         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"
+         alt="Iftitah Photo">
+    <div class="photo-placeholder" style="display:none;">your photo here</div>
+  </div>
+</section>
+
+<!-- ── PROJECTS ── -->
+<section id="projects">
+  <div class="section-tag reveal">Work /&gt;</div>
+  <h2 class="reveal">Selected <span class="accent">Projects</span></h2>
+
+  <div class="project-list">
+
+    <div class="project left">
+      <img src="assets/nl2.png" alt="Project 01" style="width:120px;"
+           onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+      <div class="img-placeholder" style="display:none;">NusaLingo Preview</div>
+      <div class="project-content">
+        <div class="project-num">01 — UI/UX</div>
+        <h3>NusaLingo</h3>
+        <p>Design of an interactive learning application based on gamification to help users learn regional languages across Indonesia.</p>
+        <div class="project-tags">
+          <span class="tag">Figma</span>
         </div>
+      </div>
     </div>
 
+    <div class="project right" style="transition-delay:.1s">
+      <img src="assets/bansoshub2.jpg" alt="Project 02" style="height:310px;"
+           onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+      <div class="img-placeholder" style="display:none;">BansosHub Preview</div>
+      <div class="project-content">
+        <div class="project-num">02 — Website</div>
+        <h3>BansosHub</h3>
+        <p>A web-based platform for distributing social assistance that allows users to provide aid as donors and claim assistance as recipients.</p>
+        <div class="project-tags">
+          <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="project left" style="transition-delay:.15s">
+      <img src="assets/pb.png" alt="Project 03" style="height:310px;"
+           onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+      <div class="img-placeholder" style="display:none;">DEJON Pb Preview</div>
+      <div class="project-content">
+        <div class="project-num">03 — UI/UX</div>
+        <h3>DEJON Photobooth</h3>
+        <p>A web-based photobooth platform that enables users to upload custom frame templates and generate personalized photo outputs.</p>
+        <div class="project-tags">
+          <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="project right" style="transition-delay:.2s">
+      <img src="assets/signal 1.png" alt="Project 04" style="width:120px;"
+           onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+      <div class="img-placeholder" style="display:none;">Signal Preview</div>
+      <div class="project-content">
+        <div class="project-num">04 — UI/UX</div>
+        <h3>Signal</h3>
+        <p>Redesigned the Signal mobile application interface to improve usability.</p>
+        <div class="project-tags">
+          <span class="tag">Figma</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="project left" style="transition-delay:.25s">
+      <img src="assets/krs.png" alt="KRS" style="height:310px;"
+           onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+      <div class="img-placeholder" style="display:none;">KRS Preview</div>
+      <div class="project-content">
+        <div class="project-num">05 — UI/UX</div>
+        <h3>KRS</h3>
+        <p>Redesigned the KRS website interface to improve usability</p>
+        <div class="project-tags">
+          <span class="tag">Figma</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── CONTACT ── -->
+<section id="contact">
+  <div class="contact-inner">
+    <div class="section-tag reveal">Contact /&gt;</div>
+    <h2 class="reveal">Let's <span class="accent">Connect</span></h2>
+    <p class="reveal">
+      Feel free to reach out!
+    </p>
+    <div class="contact-links reveal">
+      <a href="mailto:iftitah@email.com" class="contact-link">
+      <img src="assets/gmail.svg" width="60"> 
+      </a>
+      <a href="#" class="contact-link">
+      <img src="assets/linkedin.svg" width="60"> 
+      </a>
+      <a href="#" class="contact-link">
+      <img src="assets/github.svg" width="60"> 
+      </a>
+      <a href="#" class="contact-link">
+      <img src="assets/instagram.svg" width="60"> 
+      </a>
+    </div>
+  </div>
+</section>
+<script src="script.js"></script>
 </body>
 </html>
